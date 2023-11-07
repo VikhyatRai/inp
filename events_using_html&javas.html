@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exp5</title>
+</head>
+<style>
+h1{
+background-color: purple; text-align: center;
+}
+p{
+background-color: purple; text-align: center;
+font-size: 30px; font-weight: bold;
+}
+body{
+border-radius: 100px;
+}
+</style>
+<body>
+<label for="">enter your name</label>
+<input type="text" id="name" onblur="myfun()">
+<p>If you leave this input field then your input will converted into upper case</p>
+<h1 id="1st_heading">good morning</h1>
+<p id="demo"></p>
+<button onclick="add_text()">click here to add some text</button>
+<button onmouseover="change_bg()" onmouseout="change_bgg()">keep cursor here to change background color</button>
+<button ondblclick="change_bg_of_1st_heading()">double click to change 1st heading's background color</button>
+
+<script>
+function add_text(){ document.getElementById("demo").innerHTML="have a nice day";
+}
+function change_bg(){ document.body.style.backgroundColor='red';
+}
+function change_bg_of_1st_heading(){ document.getElementById("1st_heading").style.backgroundColor='green';
+}
+function change_bgg(){ document.body.style.backgroundColor='white';
+}
+function myfun(){
+let x = document.getElementById("name"); x.value = x.value.toUpperCase();
+
+}
+
+</script>
+</body>
+</html>

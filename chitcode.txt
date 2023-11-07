@@ -1,0 +1,31 @@
+//exp8
+npm install react
+npx create-reacr-app my-app
+cd my-app
+nmp install react-router-dom
+nmp audit fix --force
+
+//exp12
+npm install express --save
+node exp12.js
+localhost:9000
+localhost:9000/admin
+localhost:9000/student
+
+//exp-7
+npm --version
+node.js download from google
+npm install react
+npx create-react-app my-app
+npm start
+
+// exp10
+SL named folder 
+two files
+example.txt
+sample.txt
+node filename
+
+//exp12
+npm som.js
+npm install express

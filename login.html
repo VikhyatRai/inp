@@ -1,0 +1,109 @@
+<!-- exp-3    To create a Login page using HTML and CSS. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<div class="form-box">
+<h1 id="title">Student Login Form</h1>
+<form>
+<div class="input-group">
+<div class="input-field" id="nameField">
+<i class="fa-solid fa-user"> </i>
+Name: <input type="text" placeholder="Name"><br><br>
+</div>
+
+<div class="input-field">
+<i class="fa-solid fa-list-ol"></i>
+Roll No: <input type="number" placeholder="Roll No"><br><br>
+</div>
+
+<div class="input-field">
+<i class="fa-regular fa-id-card"></i>
+Username: <input type="text" placeholder="Username"><br><br>
+</div>
+
+<div class="input-field">
+<i class="fa-solid fa-lock"> </i> Password: <input type="password"
+placeholder="Password"><br><br>
+</div>
+
+
+<div for="Department">Department:
+<select name="Department" id="Department">
+<option value="CE">CE</option>
+<option value="IT">IT</option>
+<option value="EXTC">EXTC</option>
+<option value="MECH">MECH</option>
+</select>
+</div>
+<br>
+
+Gender: <input type="radio" name="gender" value="male"> Male
+ 
+<input type="radio" name="gender" value="female"> Female
+
+</div>
+<br>
+
+<div>
+<legend>Area of interests: </legend>
+<input type="radio" name="track" id="track" value="track"
+/><label for="track">Programming</label><br />
+<input type="radio" name="event" id="event" value="event" /><label for="event">Logistics</label><br />
+<input type="radio" name="message" id="message" value="message"
+/><label for="message">Marketing</label><br />
+</div>
+<br>
+
+</button>
+
+Form </button>
+ 
+<div class="btn-field">
+<button type="button" id="submitBtn" class="disable"> Submit
+
+<button type="button" id="ClearformBtn" class="disable"> Clear
+
+</div>
+ 
+</form>
+
+</div>
+</div>
+
+</body>
+<style>
+*{
+    
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    
+    }
+     
+    .container{
+    width: 100%; height: 100vh;
+    background-image: linear-gradient(rgba(73, 73, 109, 0.8),rgba(82, 82, 119, 0.8)),url(https://images.pexels.com/photos/2973323/pexels-photo-2973323.jpeg?auto=compress&cs=tinysrgb&w=1600);
+    background-position: center; 
+    background-size: cover; 
+    position: relative;
+    }
+    .form-box{
+    width: 90%;
+    max-width: 450px; position: absolute; top: 50%;
+     
+    left: 50%;
+    transform: translate(-50%,-50%); background: #fff;
+    padding: 50px 60px 70px; text-align: left;
+    }
+    .form-box h1{
+    font-size: 30px; margin-bottom: 60px; color: #3c00a0; position: relative;
+}
+</style>
+</html>

@@ -1,0 +1,25 @@
+
+EXP 7
+1. first create folder(first npm --version if not found dowload node.js from google)
+   app.js
+   class.js
+   function.js
+   app.css
+
+   npm install react
+
+2. npx create-react-app my-app
+
+3. put app.css & aap.js in my-app folder
+
+4. then in src file create components folder
+
+5. then move function.js & class.js in components folder
+
+6. npm start
+
+EXP 8
+node path of the file
+npm install
+npm install express
+npm install react-router-dom

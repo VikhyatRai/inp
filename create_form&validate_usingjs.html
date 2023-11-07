@@ -1,0 +1,103 @@
+<!-- exp6 To create form & validate using javascript. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="exp6.css">
+<script src="exp6.js"></script>
+</head>
+<body>
+<div class="contanier">
+<h1>Registration Form</h1>
+<form id="form_id" name="aa">
+<label class="name">Name</label>
+<input id="a" type="text" name="fname">
+<br><br>
+<label class="rollno">Roll_no</label>
+<input id="a" type="number" name="froll">
+<br><br>
+<label class="Phone">Phone Number</label>
+<input id="a" type="number" name="phoneno">
+<br><br>
+<label class="password">Password</label>
+<input id="a" type="password" name="pass">
+<br><br>
+<input id="button" type="button" onclick="newFunction()" value="Reset">
+<input type="submit" value="Submit" onclick="validateForm()">
+</form>
+</div>
+</body>
+<style>
+    .contanier{
+  
+  background-color: #7DC383; width: 400px;
+  padding-top: 25px; position: absolute; left: 550px;
+  top: 150px;
+  
+  }
+  
+  #a{
+  
+  position: absolute; left: 200px;
+  row-gap: 10px;
+  
+  }
+  
+  #b{
+  
+  position: absolute; left: 300px;
+  row-gap: 10px;
+  }
+  
+  .contanier h1{
+  
+  background-color:greenyellow; width: 400px;
+  text-align: center;
+  
+  }
+  
+  #form_id{
+  
+  padding-left: 80px; padding-top: 10px; padding-bottom: 10px; padding-right: 50px;
+  }
+</style>
+<script>
+    function newFunction(event){
+
+var element = document.getElementById("form_id"); element.reset()
+}
+
+function validateForm() {
+let name = document.forms["aa"]["fname"].value; let Pass = document.forms["aa"]["pass"].value; let rollno = document.forms["aa"]["froll"].value; let phone = document.forms["aa"]["phoneno"].value;
+if (name == "") {
+
+alert("Name must be filled out"); 
+return false ;
+}
+if (Pass == ""){
+alert("Password must be filled out"); 
+return false ;
+}
+if (Pass.length <6){
+alert("password should be 6 characters longer"); 
+return false ;
+}
+if (phone.length <10){
+alert("phone number should be 10 digits"); 
+return false ;
+}
+if (phone.length >10){
+alert("phone number should be 10 digits"); 
+return false ;
+}
+
+alert("done");
+
+}
+
+</script>
+</html
+
